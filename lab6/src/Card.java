@@ -6,6 +6,7 @@ LAB 6
 
 
 import java.awt.Color;
+import java.util.Collections;
 
 public class Card implements Comparable<Card> {
     private Color color;
@@ -39,7 +40,8 @@ public class Card implements Comparable<Card> {
         if (o.getValue() != null && this.getValue() != null) {
             result = Integer.compare(Integer.parseInt(o.getValue()), Integer.parseInt(this.getValue()));
             if(result == 0){
-                return o.getColorName().compareTo(this.getColorName());
+                return this.getColorName().compareTo(o.getColorName());
+
             }
         }
         return result;
