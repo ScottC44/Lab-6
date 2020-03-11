@@ -21,9 +21,7 @@ public class Main extends Application {
             JOptionPane.showMessageDialog(null, deck.toString(), null, JOptionPane.INFORMATION_MESSAGE);
             deck.sort();
             JOptionPane.showMessageDialog(null, deck.toString(), null, JOptionPane.INFORMATION_MESSAGE);
-            Deck cloned = (Deck) deck.clone();
-            cloned.sort();
-            JOptionPane.showMessageDialog(null, deck.toString(), null, JOptionPane.INFORMATION_MESSAGE);
+
         }
     }
 

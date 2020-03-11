@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Deck implements Cloneable {
+public class Deck  {
     List<Card> cards = new ArrayList<Card>(108);
     public Deck() {
         this.cards.add(new Card(Color.green, "0"));
@@ -34,12 +34,6 @@ public class Deck implements Cloneable {
                 this.cards.set(i, temp);
             }
         }
-    }
-    @Override
-    public Object clone() {
-        Deck deck = new Deck();
-        deck.cards = new ArrayList<Card>(this.cards);
-        return deck;
     }
     @Override
     public String toString() {

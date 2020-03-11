@@ -37,7 +37,7 @@ public class Card implements Comparable<Card> {
     public int compareTo(Card o) {
         int result = 0;
         if (o.getValue() != null && this.getValue() != null) {
-            result = ((Integer)Integer.parseInt(o.getValue())).compareTo(Integer.parseInt(this.getValue()));
+            result = Integer.compare(Integer.parseInt(o.getValue()), Integer.parseInt(this.getValue()));
             if(result == 0){
                 return o.getColorName().compareTo(this.getColorName());
             }
