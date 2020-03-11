@@ -15,12 +15,7 @@ public class Deck implements Cloneable {
         this.cards.add(new Card(Color.red, "0"));
         this.cards.add(new Card(Color.blue, "0"));
         this.cards.add(new Card(Color.yellow, "0"));
-        for (int j = 0; j < 1; j++) {
-            this.cards.add(new Card(Color.green, j + ""));
-            this.cards.add(new Card(Color.red, j + ""));
-            this.cards.add(new Card(Color.blue, j + ""));
-            this.cards.add(new Card(Color.yellow, j + ""));
-        }
+
         for (int q = 0; q < 2; q++) {
             for (int i = 1; i <= 9; i++) {
                 this.cards.add(new Card(Color.green, i + ""));
